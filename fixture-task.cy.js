@@ -15,10 +15,10 @@ describe("Working with Inputs", () => {
             const username = user.username
             const password = user.password
         cy.get("#user-name").clear();
-        cy.get("#user-name").type("standard_user");
+        cy.get("#user-name").type(username);
   
         cy.get('input[name="password"]').clear();
-        cy.get('input[name="password"]').type("secret_sauce");
+        cy.get('input[name="password"]').type(password);
 
         cy.get('#login-button').click()
 
@@ -34,10 +34,10 @@ describe("Working with Inputs", () => {
             const username = user.username
             const password = user.password
         cy.get("#user-name").clear();
-        cy.get("#user-name").type("standard_user");
+        cy.get("#user-name").type(username);
   
         cy.get('input[name="password"]').clear();
-        cy.get('input[name="password"]').type("secret_sauce");
+        cy.get('input[name="password"]').type(password);
 
         cy.get('#login-button').click()
 
